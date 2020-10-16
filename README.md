@@ -16,7 +16,10 @@ To install the Python dependencies, run:
     
 To train a model, run the following command:
 
-    python train.py --test-image=./DSC_1177.jpg --dataset=/dataset_path --lr=0.001
+    python train.py --test-image=./test_image.jpg --dataset=/data --lr=0.001
+
+*note1 : in the data directory, put input images in "input" folder, label images in "output" folder.
+*note2 : run the bash commands in the ipynb file to change file names in output folder, input and output must have same name.
     
 To get all train params run:
     
@@ -24,7 +27,7 @@ To get all train params run:
     
 To test image run:
 
-    python test.py --checkpoint=./ch/ckpt_0_4000.pth --input=./DSC_1177.jpg --output=out.png
+    python test.py --checkpoint=./ch/ckpt_9_12499.pth --input=./test_image.jpg --output=out.png
     
 
 ## Known issues
